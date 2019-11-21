@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    这是XML中的注释
+    和HTML相同，任何一个xml文档必须包含一个根节点
+
+-->
+<!DOCTYPE root [
+        <!ELEMENT root (student,books)>
+        <!ELEMENT student (name,age,sex,phone,email)>
+        <!ELEMENT books    (#PCDATA)>
+        <!ELEMENT name      (#PCDATA)>
+        <!ELEMENT age      (#PCDATA)>
+        <!ELEMENT sex      (#PCDATA)>
+        <!ELEMENT phone      (#PCDATA)>
+        <!ELEMENT email      (#PCDATA)>
+        ]>
+<root>
+    <student>
+        <student></student>
+    </student>
+    <student>
+        <name></name>
+        <age></age>
+        <sex></sex>
+        <phone></phone>
+        <email></email>
+    </student>
+    <books>
+        <book>
+            <name>钢铁是怎样炼成的</name>
+            <price>25</price>
+        </book>
+    </books>
+</root>
